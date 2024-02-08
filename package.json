@@ -1,5 +1,10 @@
 {
   "dependencies": {
     "cypress": "^13.6.4"
+  },
+
+  "scripts": {
+    "test-headless": "cypress run --headless --browser edge",
+    "test": "cypress run --browser edge"
   }
 }
