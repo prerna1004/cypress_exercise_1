@@ -1,7 +1,7 @@
 describe('template spec', () => {
   it('passes', () => {
     cy.visit('https://devexpress.github.io/testcafe/example/')
-    cy.get("#developer-name").type("Prerna")
+    cy.get("input[data-testid='name-input']").type("Prerna")
     expect(cy.get("#developer-name").should("have.value", "Prerna"))
     cy.get("#populate").click()
     expect(cy.get("#developer-name").should("have.value","Peter Parker"))
