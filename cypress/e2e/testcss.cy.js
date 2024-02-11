@@ -9,9 +9,9 @@ describe('template spec', () => {
       cy.get('[data-testid="parallel-testing-checkbox"]').check()
       cy.get('[data-testid="windows-radio"]').check()
       cy.get('[data-testid="preferred-interface-select"]').select('Command Line')
-      cy.get('[data-testid="tried-testcafe-checkbox]').check()
+      cy.get('[data-testid="tried-testcafe-checkbox"]').check()
       cy.get('[data-testid="comments-area"]').type('ok')
-      cy.get("#submit-button").click()
+      cy.get('[data-testid="submit-button"]').click()
       cy.get("#article-header")
       expect(cy.get("#article-header").should("have.text","Thank you, Peter Parker!"))
       
