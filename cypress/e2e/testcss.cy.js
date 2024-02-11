@@ -6,7 +6,7 @@ describe('template spec', () => {
       cy.get('[data-testid="populate-button"]').click()
       expect(cy.get('[data-testid="name-input"]'[]).should("have.value","Peter Parker"))
       cy.get('[data-testid="remote-testing-checkbox"]').check()
-      cy.get("#background-parallel-testing").check()
+      cy.get('[data-testid="parallel-testing-checkbox"]').check()
       cy.get("#windows").check()
       cy.get("#preferred-interface").select('JavaScript API')
       cy.get("#tried-test-cafe").check()
