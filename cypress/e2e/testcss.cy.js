@@ -12,8 +12,8 @@ describe('template spec', () => {
       cy.get('[data-testid="tried-testcafe-checkbox"]').check()
       cy.get('[data-testid="comments-area"]').type('ok')
       cy.get('[data-testid="submit-button"]').click()
-      cy.get("#article-header")
-      expect(cy.get("#article-header").should("have.text","Thank you, Peter Parker!"))
+      cy.get('[data-testid="thank-you-header"]')
+      expect(cy.get('[data-testid="thank-you-header"]').should("have.text","Thank you, Peter Parker!"))
       
     })
   })
