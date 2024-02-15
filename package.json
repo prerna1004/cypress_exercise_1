@@ -4,9 +4,9 @@
   },
 
   "scripts": {
-    "test-headless": "cypress run --headless --browser edge",
-    "test": "cypress run --browser edge"
-    
+    "test-headless": "cypress run --headless --browser chrome",
+    "test": "cypress run --browser chrome"
+
   
   }
 }
