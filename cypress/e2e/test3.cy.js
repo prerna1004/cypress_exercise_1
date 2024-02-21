@@ -26,6 +26,9 @@ it('my first test case',function(){
     cy.get("#show-textbox").click()
     cy.get("#displayed-text").should('be.visible')
 
+    //radio button selection
+    cy.get('[value="radio2"]').click().should('be.checked')
+
 
     
 })
