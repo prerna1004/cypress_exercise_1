@@ -5,6 +5,11 @@ it('my first test case',function(){
 
     cy.get("#alertbtn").click()
     cy.get('#confirmbtn').click()
+    //window alert
+    cy.on('window:alert',(str) =>
+    {
+        expect(str).to.equal('Hello , share this practice page and share your knowledge')
+    })
 
     
 })
