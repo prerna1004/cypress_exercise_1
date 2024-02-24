@@ -2,11 +2,11 @@
   "dependencies": {
     "cypress": "^13.6.4"
   },
-
   "scripts": {
     "test-headless": "cypress run --headless --browser chrome",
     "test": "cypress run --browser chrome"
-
-  
+  },
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
   }
 }
