@@ -1,4 +1,4 @@
-class Homepage
+export class HomePage
 {
 getEditBox()
 {
@@ -25,5 +25,6 @@ getshoptab()
     return cy.get(':nth-child(2) > .nav-link')  
 }
 }
-export default Homepage; //export keyword makesure that this call ois accesible to class
+
+export default HomePage; //export keyword makesure that this call ois accesible to class
 

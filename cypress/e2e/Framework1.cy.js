@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-import Homepage from '../pageObjects/Homepage'
+import { HomePage } from "./pageObjects/homepage.cy"
 
 describe('date spec',function() 
 {
@@ -18,12 +18,12 @@ this.data=data
 
 it('passes',function()
 {
-const homepage=new Homepage()
+const homepage=new HomePage()
    cy.visit('https://rahulshettyacademy.com/angularpractice/')  
 
 homepage.getEditBox().type(this.data.name) 
 //cy.get(':nth-child(1) > .form-control').type(this.data.name)
-homepage.gender().select(this.data.gender) 
+homepage.getGender().select(this.data.gender) 
 //cy.get('#exampleFormControlSelect1').select(this.data.gender)
 homepage.getenterpreneur().should('be.disabled')
 cy.get(':nth-child(4) > .ng-untouched').should('have.value',this.data.name)
@@ -40,3 +40,4 @@ cy.selectProduct(element)
       
     })
   })
+
